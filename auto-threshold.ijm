@@ -1,0 +1,1 @@
+setAutoThreshold("Default dark");

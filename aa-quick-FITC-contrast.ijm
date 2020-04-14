@@ -1,0 +1,18 @@
+setBatchMode(true);
+imageTitle = getTitle();
+//selectWindow(imageTitle);
+blueImage = "C1-" + imageTitle;
+greenImage = "C2-" + imageTitle;
+redImage = "C3-" + imageTitle;	
+run("Split Channels");
+selectWindow(redImage);
+close();
+selectWindow(blueImage);
+close();
+selectWindow(greenImage);
+//run("Convert to Mask");
+setBatchMode(false);
+setThreshold(1000, 65535);
+setOption("BlackBackground", true);
+run("Convert to Mask");
+//close();
