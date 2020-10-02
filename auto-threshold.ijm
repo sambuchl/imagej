@@ -1,1 +1,0 @@
-setAutoThreshold("Default dark");
